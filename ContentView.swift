@@ -20,7 +20,7 @@ struct ContentView: View {
                     showBox.toggle()
                 }
                 
-                Button("Change Color"){
+                Button("Make Red"){
                     boxColor = Color.red
                     
             
