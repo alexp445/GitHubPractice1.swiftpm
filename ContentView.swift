@@ -16,7 +16,7 @@ struct ContentView: View {
                 if showBox {
                     Rectangle()
                         .frame(width: 100, height: 100)
-                        .fill(boxColor)
+                        
                 }
                 Button("Toggle Box"){
                     showBox.toggle()
@@ -24,7 +24,17 @@ struct ContentView: View {
                 
                 Button("Change Color"){
                     boxColor = Color.red
+                    
+            
                 }
+                
+                Button("Make Blue"){
+                    boxColor = .blue
+                }
+                
+                Rectangle()
+                    .fill(boxColor)
+                    .frame(width: 100, height: 100)
             }
             
             
