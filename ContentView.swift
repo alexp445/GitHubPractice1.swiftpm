@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var showBox = false
+    @State var boxColor = Color.blue
     var body: some View {
         VStack {
             Text("This Project s a simple project!")
@@ -18,6 +19,10 @@ struct ContentView: View {
                 }
                 Button("Toggle Box"){
                     showBox.toggle()
+                }
+                
+                Button("Change Color"){
+                    boxColor = Color.red
                 }
             }
             
