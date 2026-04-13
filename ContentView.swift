@@ -9,9 +9,7 @@ struct ContentView: View {
                 .font(Font.largeTitle)
             Spacer()
             VStack{
-                Button("Square"){
-                    showBox = true
-                }
+                
                 
                 if showBox {
                     Rectangle()
