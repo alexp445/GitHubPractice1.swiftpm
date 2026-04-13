@@ -7,20 +7,21 @@ struct ContentView: View {
             Text("This Project s a simple project!")
                 .font(Font.largeTitle)
             Spacer()
-        VStack{
-            Button("Square"){
-                showBox = true
+            VStack{
+                Button("Square"){
+                    showBox = true
+                }
+                
+                if showBox {
+                    Rectangle()
+                        .frame(width: 100, height: 100)
+                }
+                Button("Toggle Box"){
+                    showBox.toggle()
+                }
             }
             
-            if showBox {
-                Rectangle()
-                    .frame(width: 100, height: 100)
-            }
-            Button("Toggle Box"){
-                showBox.toggle()
-            }
+            
         }
-        
-        
     }
 }
